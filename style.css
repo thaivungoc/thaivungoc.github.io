@@ -106,7 +106,6 @@ header {
     padding: 0px;
 }
 .on1 {
-    top: 100%;
     width: 100%;
     background-color: rgb(1, 49, 104);
     padding-top: 100px;
@@ -147,7 +146,7 @@ background-color: rgb(1, 49, 104);
 }
 .upload-wrapper {
   position: relative;
-  top: 50px; 
+  top: 0; 
   display: flex;
   justify-content: center;
   margin: 40px 0;
@@ -156,7 +155,7 @@ background-color: rgb(1, 49, 104);
 
 .upload-wrapper2 {
   position: relative;
-  top: 50px; 
+  top: 0px; 
   display: flex;
   justify-content: center;
   margin: 40px 0;
@@ -296,12 +295,80 @@ background-color: rgb(1, 49, 104);
     border-radius: 2px;
 }
 .footer-box {
-    position: relative;
-    width: 100%;
-    background-color: rgb(65, 56, 56);
-    border: 1px solid black;
-    margin-bottom: 0;
-    text-align: center;
-    padding: 10px 20px;
-    color: white;
+  background-color: #222; /* Nền tối */
+  padding: 40px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px; /* khoảng cách giữa các cột */
+  flex-wrap: wrap; /* Cho xuống dòng nếu màn nhỏ */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px; /* Lệch trái nhẹ */
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #ccc;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+.footer-bottom-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #ccc;
+  padding: 15px 10px;
+  border-top: 1px solid #444;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-bottom-inline a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+.footer-bottom-inline a1 {
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.footer-bottom-inline a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-inline span {
+  color: #666;
+}
+
