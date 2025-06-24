@@ -143,6 +143,7 @@ background-color: rgb(3, 3, 155);
   margin: 40px 0;
   z-index: 10;
 }
+
 .upload-wrapper2 {
   position: relative;
   top: 50px; 
@@ -160,12 +161,20 @@ background-color: rgb(3, 3, 155);
   border: none;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
+    animation: glowPulse 2s infinite ease-in-out;
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.3);
 }
 
-.upload1:hover {
-  background-color: rgb(40, 40, 190);
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3);
+  }
 }
 
 .description {
