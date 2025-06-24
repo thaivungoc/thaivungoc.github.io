@@ -108,9 +108,9 @@ header {
 .on1 {
     top: 100%;
     width: 100%;
-    background-color: rgb(3, 3, 155);
+    background-color: rgb(1, 49, 104);
     padding-top: 100px;
-    padding-bottom: 230px;
+    padding-bottom: 235px;
 }
 .on2 {
   background-color: white;
@@ -123,12 +123,17 @@ background-color: rgb(29, 28, 28);
   text-align: center;
 }
 .on4 {
-background-color: rgb(3, 3, 155);
+background-color: rgb(1, 49, 104);
   padding: 100px 80px;
   text-align: center;
 }
 .on5 {
   background-color: white;
+  padding: 100px 80px;
+  text-align: center;
+}
+.on6 {
+  background-color: rgb(245, 243, 243);
   padding: 100px 80px;
   text-align: center;
 }
@@ -281,6 +286,14 @@ background-color: rgb(3, 3, 155);
   font-size: 16px;
   color: blue;
   line-height: 1.5;
+}
+.pro {
+    background-color: rgb(46, 111, 231);
+    color: white;
+    font-size: 20px;
+    padding: 22px 120px;
+    border: none;
+    border-radius: 2px;
 }
 .footer-box {
     position: relative;
